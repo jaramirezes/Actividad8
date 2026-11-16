@@ -57,7 +57,7 @@ Interfaz web autocontenida para la inspección visual del estado de salud del mo
 
 1. **Clonar el repositorio e ingresar al directorio:**
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/jaramirezes/Actividad8.git
    cd Actividad8
    ```
 
@@ -68,7 +68,7 @@ Interfaz web autocontenida para la inspección visual del estado de salud del mo
 
 3. **Ejecutar el ciclo de monitoreo o simulación:**
    ```bash
-   # Ejecutar el notebook Actividad8.IPYNB en Google Colab paso a paso para obtener los resultados de manera visual. 
+   Ejecutar el notebook Actividad8.IPYNB en Google Colab paso a paso para obtener los resultados de manera visual. 
    python fuentes/Actividad8.IPYNB
    ```
 
