@@ -1,0 +1,16 @@
+2026-11-16 02:14:59,246 [INFO] Métricas ANTES del incidente: {'accuracy': 0.9564, 'f1_score': 0.9529, 'confianza_promedio': 0.6418, 'latencia_ms': 14.91, 'n_muestras': 390}
+2026-11-16 02:15:05,960 [WARNING] Métricas DURANTE incidente: {'accuracy': 0.341, 'f1_score': 0.2892, 'confianza_promedio': 0.2297, 'latencia_ms': 17.16, 'n_muestras': 390}
+2026-11-16 02:15:05,975 [ERROR] SLO VIOLATION: Accuracy 0.341 < 0.88 o F1 0.2892 < 0.88 o Confianza 0.2297 < 0.85
+2026-11-16 02:15:05,987 [INFO] ==================================================
+2026-11-16 02:15:05,987 [INFO] RUNBOOK-001: Iniciando reentrenamiento REAL del modelo
+2026-11-16 02:15:05,989 [INFO] ==================================================
+2026-11-16 02:15:36,402 [INFO] Modelo reentrenado guardado en /content/modelo_vit_siniestros_v2
+2026-11-16 02:15:42,897 [INFO] Reentrenamiento exitoso: {'accuracy': 0.9846, 'f1_score': 0.9842, 'confianza_promedio': 0.8937, 'latencia_ms': 16.63, 'n_muestras': 390}
+2026-11-16 02:15:42,898 [INFO] RUNBOOK-001 completado a las 2026-11-16T02:15:42.898492
+2026-11-16 02:15:42,900 [INFO] Métricas post-reentrenamiento: {'accuracy': 0.9846, 'f1_score': 0.9842, 'confianza_promedio': 0.8937, 'latencia_ms': 16.63, 'n_muestras': 390}
+2026-11-16 02:15:43,231 [WARNING] Simulando alta latencia en el servicio...
+2026-11-16 02:15:51,734 [ERROR] SLO VIOLATION: Latencia 2515.34ms > 2000ms
+2026-11-16 02:15:51,744 [INFO] ==================================================
+2026-11-16 02:15:51,745 [INFO] RUNBOOK-002: Iniciando escalamiento del servicio
+2026-11-16 02:15:51,746 [INFO] ==================================================
+2026-11-16 02:15:52,548 [INFO] RUNBOOK-002 completado. Latencia recuperada: 850.0ms
